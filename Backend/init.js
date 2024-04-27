@@ -17,6 +17,7 @@ const initAdminUser = async () => {
         password: hashedPassword,
         confirmado: true,
         token: null,
+        rol: 'administrador',
         // Otros campos del usuario administrador
       });
 

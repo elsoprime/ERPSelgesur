@@ -31,10 +31,14 @@ const usuarioSchema = mongoose.Schema({
         type: Boolean,
         default: false,
     },
+    rol: {
+        type: String,
+        enum: ['usuario', 'administrador'],
+        default: 'usuario',
+    },
     imagen: {
         type: Buffer,
     }
-
 });
 
 // Antes de la ejecución de la inserción de los registros hacemos el Hash del password

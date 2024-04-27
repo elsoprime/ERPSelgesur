@@ -31,10 +31,7 @@ const empresaSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Instalacion'
     }],
-    empleados: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Empleado'
-    }],
+       
     usuarioAsociado: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Usuario'
